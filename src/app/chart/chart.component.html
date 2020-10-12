@@ -1,0 +1,91 @@
+
+
+<div class="row">
+<div class="col-10">
+<h4>Current Month
+   Cumulative Data updated as on {{RptDate}}</h4>
+  <div class="row">
+    <div class="col">
+  
+  <div class="card border-primary mb-3" style="max-width: 25rem;">
+    <div class="card-header"><h4>Working</h4></div>
+    <div class="card-body">
+      
+  <ngx-charts-pie-chart
+  [view]="[300,200]"
+  [scheme]="piecolorScheme"
+  [results]="wkgData"
+  [gradient]="gradient"
+  [legend]="showLegend"
+  [legendPosition]="legendPosition"
+  [labels]="showLabels"
+  [doughnut]="isDoughnut"
+  [trimLabels]="true"
+  
+  >
+  </ngx-charts-pie-chart>
+    </div>
+  </div>
+  </div>
+  
+  
+  <div class="col">
+  
+    <div class="card border-primary mb-3" style="max-width: 30rem;">
+      <div class="card-header"><h4>Provision-Closure</h4></div>
+      <div class="card-body">
+               
+    <ngx-charts-bar-vertical-2d
+    [view]="view"
+    [scheme]="verbarcolorScheme"
+    [results]="provclsData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="true"
+   
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+   
+    >
+  
+  </ngx-charts-bar-vertical-2d>
+      </div>
+    </div>
+    </div>
+    </div>
+<div class="row">
+  <div class="col">
+
+<div class="card border-primary mb-3" style="max-width: 40rem;">
+  <div class="card-header"><h4>PROVISION CLOSURE TREND - 30 days</h4></div>
+  <div class="card-body">
+
+    <ngx-charts-line-chart
+    [view]="[400,300]"
+    [scheme]="verbarcolorScheme"
+    [results]="provclsTrendData"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+   
+    >
+  
+  </ngx-charts-line-chart>
+  </div>
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
