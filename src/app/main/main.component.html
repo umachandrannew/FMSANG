@@ -1,0 +1,232 @@
+
+
+
+
+
+<div class="col-10">
+<br>
+<div class="row">
+          
+    <div class="col">
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header"><h4>{{frPageHeading}}</h4> as on {{eoiRptDate}}</div>
+                <div class="card-body">
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr >
+                                <th *ngFor="let frHeader of frHeaders">{{frHeader.headerName }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let frRow of frData">
+                                <td *ngFor="let e of frRow | keyvalue:keySort.originalOrder">{{e.value}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+           <div class="card-header"><h4>{{bbcPageHeading}}</h4> as on {{bbcRptDate}}</div>
+           <div class="card-body" >
+               <table class="table table-sm table-bordered">
+                   <thead>
+                   <tr >
+                       <th *ngFor="let bbcHeader of bbcHeaders">{{bbcHeader.headerName }}</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                   <tr *ngFor="let frRow of bbcData">
+                   <td *ngFor="let e of frRow | keyvalue:keySort.originalOrder">{{e.value}}</td>
+                   </tr>
+               </tbody>
+               </table>
+           </div>
+           </div>
+           </div>
+   
+
+    </div>
+<div class="row">
+    <div class="col">
+
+<div class="card border-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header"><h4>{{oltePageHeading}}</h4> as on {{olteRptDate}}</div>
+    <div class="card-body">
+        <table class="table table-sm table-bordered">
+            <thead>
+            <tr >
+                <th *ngFor="let olteHeader of olteHeaders">{{olteHeader.headerName }}</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let frRow of olteData">
+            <td *ngFor="let e of frRow | keyvalue:keySort.originalOrder">{{e.value}}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+</div>
+<div class="col">
+    <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header"><h4>{{eoiPageHeading}}</h4> as on {{eoiRptDate}}</div>
+            <div class="card-body">
+                <table class="table table-sm table-bordered">
+                    <thead>
+                    <tr >
+                        <th *ngFor="let eoiHeader of eoiHeaders">{{eoiHeader.headerName }}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let eoiRow of eoiData">
+                    <td *ngFor="let e of eoiRow | keyvalue:keySort.originalOrder">{{e.value}}</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+        <h4 class="mt-4">Bharat Fiber-FMS Information</h4>
+        <div class="col-lg-12">
+                <h6 class="h6">Documents and Templates</h6>
+
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="h6">Useful Materails </h6>
+
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a class="nav-link" href="fmsnew/Downloads/FMS PPT.ppt">
+
+                                        PPT
+                                    </a>
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <a class="nav-link" href="fmsnew/Downloads/flow charts.doc">
+
+                                        Flow Chart
+                                    </a>
+                                </li>
+
+
+                                                        <li class="list-group-item">
+                                    <a class="nav-link" href="fmsnew/Downloads/InstaPay CTOP Online_modified.pptx">
+
+                                        Insta Pay PPT
+                                    </a>
+                                </li>
+
+
+                                                        <li class="list-group-item">
+                                    <a class="nav-link" href="fmsnew/Downloads/User Manual Franchisee InstaPay Portal.pdf">
+
+                                        Insta Pay User Manual
+                                    </a>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="h6">Details Required for UserCreation</h6> <h6 class="h6"> </h6>
+
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a class="nav-link" href="fmsnew/Downloads/Franchisee On-boarding along with commission structure.pdf">
+
+                                        Franchisee Creation and Code Creation in FMS
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="nav-link" href="fmsnew/Downloads/Franchisee creation procedure.doc">
+
+                                        Franchisee Creation Procedure
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="nav-link" href="fmsnew/Downloads/fms_manager.xlsx">
+
+                                        Franchisee Manager Template
+                                    </a><br>
+                                                                (Franchisee Manager can be created by DGM)
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="h6"> CRM, CLARITY Templates</h6> <h6 class="h6">(Sales,  Work , Maintenance codes can be created in FMS)</h6>
+                                                        <h6 class="h6">Below Templates are the data to be ready</h6>
+
+                            </div>
+                            <ul class="list-group list-group-flush">
+
+
+                                <li class="list-group-item">
+                                    <a class="nav-link" href="fmsnew/Downloads/sales_franchisee.xlsx">
+
+                                        Sales Franchisee 
+                                    </a>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <a class="nav-link" href="fmsnew/Downloads/WorkFranchisee.zip">
+
+                                        Work/Maintenance
+                                    </a>
+                                </li>
+
+
+                                <li class="list-group-item">
+                                    <a class="nav-link" href="fmsnew/Downloads/Template for Franchise code change in clarity.xlsx">
+
+                                        Franchisee Code change for Service Number- Excel file
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+    </div>
+</div>
+
+    
